@@ -1,0 +1,27 @@
+$def with(datos)
+
+<h1>Base de datos</h1>
+<a href="/productos/insert"><h4><p>Nuevo producto <span class="glyphicon glyphicon-plus"></span></p></h4></a>
+
+<table class="table table-striped">
+    <th>ID</th>
+    <th>Nombre</th>
+    <th>Lote</th>
+    <th>Existencias</th>
+    <th>Fecha de caducidad</th>
+    <th>Update</th>
+    <th>Delete</th>
+    $for row in datos:
+        <tr>
+            <td><a href="/productos/view/$row.id_producto">$row.id_producto</a></td>
+            <td><a href="/productos/view/$row.id_producto">$row.nombre_producto</a></td>
+            <td><a href="/productos/view/$row.id_producto">$row.lote_producto</a></td>
+            <td><a href="/productos/view/$row.id_producto">$row.existencia_producto</a></td>
+            <td><a href="/productos/view/$row.id_producto">$row.fecha_caducida_producto</a></td>
+
+            <td><a href="/productos/delete/$row.id_producto">Delete <span class="glyphicon glyphicon-trash"></span></a></td>
+            <td><a href="/productos/update/$row.id_producto">Update <span class="glyphicon glyphicon-cog"></a></td>
+        </tr>
+</table><br>
+
+

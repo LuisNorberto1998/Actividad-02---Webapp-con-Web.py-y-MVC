@@ -1,0 +1,31 @@
+$def with(datos)
+<h1>Eliminar</h1>
+
+<form method="POST"><br>
+    <div class="form-group">
+        <label for="formGroupExampleInput">ID</label>
+        <input type="text" readonly="true" value="$datos.id_cliente" id="id" name="id" class="form-control"><br>
+
+        <label for="nombreCliente">Nombre</label>
+        <input type="text" readonly="true" value="$datos.nombre_cliente" id="nombreCliente" name="nombreCliente" class="form-control"><br>
+
+        <label for="apellidoPC">Apellido Paterno</label>
+        <input type="text" readonly="true" value="$datos.apellido_paterno_cliente" id="apellidoPC" name="apellidoPC"
+            class="form-control"><br>
+
+        <label for="apellidoMC">Apellido Materno</label>
+        <input type="text" readonly="true" value="$datos.apellido_materno_cliente" id="apellidoMC" name="apellidoMC"
+            class="form-control"><br>
+
+        <label for="telefonoCliente">Telefono</label>
+        <input type="text" readonly="true" value="$datos.telefono_cliente" id="telefonoCliente" name="telefonoCliente"
+            class="form-control"><br>
+
+        <label for="emailCliente">Email</label>
+        <input type="text" readonly="true" value="$datos.email_cliente" id="emailCliente" name="emailCliente" class="form-control"><br>
+
+        <button type="submit" class="btn btn-primary">Eliminar cliente  <span class="glyphicon glyphicon-remove-sign"></span></button>
+    </div>
+</form><br>
+
+<a href="/clientes">Pagina anterior...</a>

@@ -1,0 +1,24 @@
+$def with(datos)
+<h1>Update</h1>
+
+<form method="POST"><br>
+    <label for="id">ID</label>
+    <input type="text" readonly="true" value="$datos.id_producto" id="id" name="id" class="form-control"><br>
+
+    <label for="nombreProducto">Nombre</label>
+    <input type="text" value="$datos.nombre_producto" id="nombreProducto" name="nombreProducto" class="form-control"><br>
+
+    <label for="loteProducto">Lote</label>
+    <input type="text" value="$datos.lote_producto" id="loteProducto" name="loteProducto" class="form-control"><br>
+
+    <label for="existenciasProducto">Existencias</label>
+    <input type="text" value="$datos.existencia_producto" id="existenciaProducto" name="existenciaProducto" class="form-control"><br>
+
+    <label for="fechaCProducto">Fecha de caducidad</label>
+    <input type="text" value="$datos.fecha_caducida_producto" id="fechaCProducto" name="fechaCProducto" class="form-control"><br>
+
+    <button type="submit" class="btn btn-primary">Update</button>
+
+</form>
+<br>
+<a href="/productos">pagina anterior...</a>
