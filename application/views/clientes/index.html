@@ -10,26 +10,55 @@ $def with(datos)
 <table class="table">
     <thead class="thead-dark">
         <tr>
-            <th scope="col"><h4>Nombre</h4></h3></th>
-            <th scope="col"><h4>Apellido Paterno</h4></th>
-            <th scope="col"><h4>Apellido Materno</h4></th>
-            <th scope="col"><h4>Telefono</h4></th>
-            <th scope="col"><h4>Email</h4></th>
-            <th scope="col"><h4>Actualizar</h4></th>
-            <th scope="col"><h4>Eliminar</h4></th>
+            <th scope="col">
+                <h4>Nombre</h4>
+                </h3>
+            </th>
+            <th scope="col">
+                <h4>Apellido Paterno</h4>
+            </th>
+            <th scope="col">
+                <h4>Apellido Materno</h4>
+            </th>
+            <th scope="col">
+                <h4>Telefono</h4>
+            </th>
+            <th scope="col">
+                <h4>Email</h4>
+            </th>
+            <th scope="col">
+                <h4>Actualizar</h4>
+            </th>
+            <th scope="col">
+                <h4>Eliminar</h4>
+            </th>
         </tr>
     </thead>
     $for row in datos:
     <tbody>
         <tr>
-            <td><a href="/clientes/view/$row.id_cliente"><h4>$row.nombre_cliente</h4></a></td>
-            <td><a href="/clientes/view/$row.id_cliente"><h4>$row.apellido_paterno_cliente</h4></a></td>
-            <td><a href="/clientes/view/$row.id_cliente"><h4>$row.apellido_materno_cliente</h4></a></td>
-            <td><a href="/clientes/view/$row.id_cliente"><h4>$row.telefono_cliente</h4></a></td>
-            <td><a href="/clientes/view/$row.id_cliente"><h4>$row.email_cliente</h4></a></td>
+            <td><a href="/clientes/view/$row.id_cliente">
+                    <h4>$row.nombre_cliente</h4>
+                </a></td>
+            <td><a href="/clientes/view/$row.id_cliente">
+                    <h4>$row.apellido_paterno_cliente</h4>
+                </a></td>
+            <td><a href="/clientes/view/$row.id_cliente">
+                    <h4>$row.apellido_materno_cliente</h4>
+                </a></td>
+            <td><a href="/clientes/view/$row.id_cliente">
+                    <h4>$row.telefono_cliente</h4>
+                </a></td>
+            <td><a href="/clientes/view/$row.id_cliente">
+                    <h4>$row.email_cliente</h4>
+                </a></td>
 
-            <td><a href="/clientes/delete/$row.id_cliente"><h4>Actualizar<span class="glyphicon glyphicon-trash"></h4></span></a></td>
-            <td><a href="/clientes/update/$row.id_cliente"><h4>Eliminar <span class="glyphicon glyphicon-cog"></h4></span></a></td>
+            <td><a href="/clientes/delete/$row.id_cliente">
+                    <h4>Actualizar<span class="glyphicon glyphicon-trash"></h4></span>
+                </a></td>
+            <td><a href="/clientes/update/$row.id_cliente">
+                    <h4>Eliminar <span class="glyphicon glyphicon-cog"></h4></span>
+                </a></td>
 
         </tr>
     </tbody>
